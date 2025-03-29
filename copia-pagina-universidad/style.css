@@ -38,13 +38,42 @@
     font-size: 12px; /* Tamaño de fuente más pequeño */
 }
 
+/* Contenedor combinado de estudiantes y nav */
+.estudiantes-nav-container {
+    display: flex; /* Alineación horizontal */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espaciado entre "ESTUDIANTES" y el nav */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo claro */
+    border-bottom: 2px solid #ddd; /* Línea divisoria */
+}
+
+.estudiantes-container {
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Texto en negro */
+}
+
 .nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px; /* Espacio entre cada elemento li */
-    margin-right: auto; /* Empuja el nav hacia la izquierda */
+    display: flex; /* Alineación horizontal */
+    gap: 15px; /* Espaciado entre los elementos del nav */
+    list-style: none; /* Eliminar viñetas */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+}
+
+.nav li a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: green; /* Texto en verde */
+    font-size: 14px; /* Tamaño de fuente */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.nav li a:hover {
+    background-color: #ddd; /* Fondo gris claro al pasar el mouse */
+    color: darkgreen; /* Cambiar a verde oscuro al pasar el mouse */
 }
 
 .nav li {
@@ -305,4 +334,67 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilo para el contenedor del submenú */
+.submenu-container ul {
+    display: flex; /* Alineación horizontal */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias filas */
+    justify-content: center; /* Centrar los elementos */
+    list-style: none; /* Eliminar viñetas */
+    padding: 10px 0; /* Espaciado interno */
+    margin: 0; /* Eliminar márgenes */
+    background-color: #fff; /* Fondo blanco */
+    border-bottom: 2px solid #ddd; /* Línea divisoria */
+}
+
+.submenu-container ul li {
+    margin: 0 10px; /* Espaciado entre elementos */
+    font-size: 14px; /* Tamaño de fuente */
+    color: black; /* Texto en negro */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+    transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+.submenu-container ul li:hover {
+    color: green; /* Cambiar a verde al pasar el mouse */
+}
+
+/* Estilo para el nuevo contenido */
+.nuevo-contenido h2 {
+    font-size: 18px; /* Tamaño de fuente */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    line-height: 1.5; /* Altura de línea */
+}
+
+/* Estilo para la barra de navegación */
+.navbar {
+    display: flex; /* Alineación horizontal */
+    justify-content: center; /* Centrar los enlaces */
+    gap: 15px; /* Espaciado entre enlaces */
+    padding: 10px 0; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo claro */
+    border-bottom: 2px solid #ddd; /* Línea divisoria */
+}
+
+.navbar a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: black; /* Texto en negro */
+    font-size: 14px; /* Tamaño de fuente */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Fondo gris claro al pasar el mouse */
+    color: green; /* Cambiar a verde al pasar el mouse */
+}
+
+/* Estilo para el contenedor del documento */
+.document-container {
+    display: flex; /* Alineación horizontal */
+    justify-content: center; /* Centrar el contenido */
+    padding: 20px 0; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
 }
