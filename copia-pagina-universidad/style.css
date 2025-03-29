@@ -1,0 +1,308 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal del encabezado */
+.main-header {
+    display: flex; /* Alineación horizontal */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espaciado entre logo y menú */
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo claro */
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho */
+}
+
+/* Contenedor del encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaciado uniforme entre logo y menú */
+    padding: 10px 40px; /* Espaciado interno */
+    border-bottom: 1px solid #ddd; /* Línea inferior para separación */
+}
+
+.contentido {
+    margin: 0 auto;
+    padding: 0 5px; /* Reduce el espaciado en los lados izquierdo y derecho */
+}
+
+.top {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
+    align-items: center;
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px; /* Espacio entre cada elemento li */
+    margin-right: auto; /* Empuja el nav hacia la izquierda */
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: green; /* Letras en color verde */
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons {
+    display: flex; /* Alineación horizontal */
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    gap: 15px; /* Espacio entre los íconos */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.social-icons a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: green; /* Color de los íconos */
+    font-size: 12px; /* Tamaño de los íconos */
+    padding: 10px 15px; /* Espaciado interno */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+    display: flex; /* Asegura que los íconos estén centrados */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.social-icons a:hover {
+    background-color: #ddd; /* Fondo gris claro al pasar el mouse */
+    border-radius: 50%; /* Bordes redondeados para un efecto circular */
+    color: darkgreen; /* Cambiar a un verde más oscuro al pasar el mouse */
+}
+
+/* Estilo para el logo de la universidad */
+.logo-universidad {
+    max-width: 120px; /* Tamaño máximo del logo */
+    height: auto; /* Mantener proporción */
+    flex-shrink: 0; /* Evitar que el logo se reduzca */
+}
+
+/* Estilos para el logo */
+.logo {
+    max-width: 150px; /* Tamaño ajustado */
+    height: auto; /* Mantener proporción */
+}
+
+/* Estilo para el menú principal */
+.main-menu {
+    display: flex; /* Alineación horizontal */
+    justify-content: center; /* Centrar el menú */
+    align-items: center; /* Centrar verticalmente */
+    gap: 20px; /* Espaciado entre los elementos */
+    list-style: none; /* Eliminar viñetas */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+    flex-grow: 1; /* Permitir que el menú ocupe el espacio restante */
+}
+
+.main-menu li {
+    display: inline-block; /* Asegurar que los elementos estén en línea */
+}
+
+.main-menu li a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: black; /* Letras en color negro */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    padding: 10px 15px; /* Espaciado interno */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+.main-menu li a:hover {
+    color: #007b00; /* Verde oscuro al pasar el mouse */
+}
+
+/* Estilo para el ícono de búsqueda */
+.search-icon {
+    font-size: 16px; /* Tamaño del ícono */
+    color: black; /* Color del ícono */
+    cursor: pointer;
+}
+
+.main-banner {
+    width: 100%;  /* Que ocupe todo el ancho */
+    text-align: center; /* Centrar la imagen */
+    margin-top: 10px; /* Espacio después del menú */
+}
+
+.banner-image {
+    width: 100%;  /* Ajusta la imagen al ancho de la página */
+    max-height: 400px; /* Altura máxima */
+    object-fit: cover; /* Recorta la imagen para que se vea bien */
+}
+
+/* Estilos para la sección de estadísticas */
+.stats-section {
+    display: grid; /* Usar grid para organizar los elementos */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas adaptables */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    background-color: #eaeaea; /* Fondo gris claro */
+    text-align: center; /* Centrar contenido */
+}
+
+.stats-section .stat {
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    box-shadow: none; /* Sin sombra */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.stats-section .stat:hover {
+    transform: scale(1.02); /* Efecto de zoom ligero al pasar el mouse */
+}
+
+.stats-section .stat img {
+    max-width: 100px; /* Tamaño máximo de las imágenes */
+    height: auto; /* Mantener proporción */
+    margin-bottom: 10px; /* Espaciado debajo de la imagen */
+}
+
+.stats-section .stat h2 {
+    font-size: 24px; /* Tamaño de fuente grande */
+    color: green; /* Color verde */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+.stats-section .stat p {
+    font-size: 16px; /* Tamaño de fuente mediano */
+    color: black; /* Texto en negro */
+    margin: 0; /* Eliminar márgenes */
+}
+
+.eventos {
+    display: flex;
+    justify-content: center; /* Centra los eventos horizontalmente */
+    gap: 20px; /* Espaciado entre eventos */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.evento {
+    width: 300px; /* Ajusta el ancho de cada evento */
+    background: #eaeaea; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: hidden; /* Para evitar desbordamientos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.evento img {
+    width: 100%; /* Que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    border-radius: 10px;
+}
+
+.nuestro-canal {
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor-videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 30%;
+}
+
+.video img, .video iframe {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #f9f9f9; /* Fondo claro */
+    color: black; /* Texto en negro */
+    padding: 20px 40px; /* Espaciado interno */
+    font-family: Arial, sans-serif; /* Fuente estándar */
+    border-top: 1px solid #ddd; /* Línea divisoria superior */
+}
+
+.footer-container {
+    display: flex; /* Alineación horizontal */
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias filas */
+    justify-content: space-between; /* Espaciado uniforme entre secciones */
+    gap: 10px; /* Reducir el espacio entre las secciones */
+}
+
+.footer-section {
+    flex: 1; /* Ajustar el tamaño de las secciones */
+    min-width: 150px; /* Reducir el ancho mínimo */
+    margin: 5px; /* Reducir el espaciado externo */
+}
+
+.footer-section h3 {
+    font-size: 14px; /* Reducir el tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 5px; /* Reducir el espaciado inferior */
+    color: black; /* Color del título */
+}
+
+.footer-section ul {
+    list-style: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+    margin: 0; /* Eliminar márgenes */
+}
+
+.footer-section ul li {
+    margin: 3px 0; /* Reducir el espaciado entre elementos */
+    font-size: 12px; /* Reducir el tamaño de fuente */
+}
+
+.footer-section ul li a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: black; /* Color del texto */
+    transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+.footer-section ul li a:hover {
+    color: green; /* Cambiar a verde al pasar el mouse */
+}
+
+.footer-bottom {
+    text-align: center; /* Centrar el texto */
+    margin-top: 20px; /* Espaciado superior */
+    padding-top: 10px; /* Espaciado interno superior */
+    font-size: 12px; /* Tamaño de fuente pequeño */
+    color: gray; /* Texto en gris */
+    border-top: 1px solid #ddd; /* Línea divisoria superior */
+}
+
+.footer-bottom a {
+    color: green; /* Color de los enlaces */
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
